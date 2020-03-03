@@ -1,10 +1,18 @@
 Simple tool to edit timesheets in STXNext Intranet
---------------------------------------------------
+==================================================
 
-### Usage
+### Setting it up
 
-Create `intranetvi.ini` file in your `$XDG_CONFIG_HOME` dir
-(usually `~/.config`) and provide following values there:
+First, install the package:
+
+```
+git clone https://github.com/rr-/stx-intranetvi
+cd stx-intranetvi
+python3 -m pip install --user .
+```
+
+Then, provide your credentials by creating `intranetvi.ini` file in your
+`$XDG_CONFIG_HOME` directory (usually `~/.config`) with the following values:
 
 ```ini
 user-id=<your intranet user id>
@@ -17,6 +25,8 @@ You can get these values from your browser:
 2. Open dev tools and the JS console
 3. Type `Globals.user.id` and save the number under the `user-id` key
 4. Type `document.cookie` and save the whole string under the `session-id` key
+
+### Usage
 
 Now you can use use tool like so:
 

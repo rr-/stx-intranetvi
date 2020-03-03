@@ -28,7 +28,7 @@ You can get these values from your browser:
 
 ### Usage
 
-Now you can use use tool like so:
+Now you can use the tool like so:
 
 ```console
 intranetvi

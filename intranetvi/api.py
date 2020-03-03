@@ -52,7 +52,7 @@ class IntranetApi:
         response.raise_for_status()
         data = response.json()
 
-        for entry in data:
+        for entry in sorted(data, key=lambda entry: entry["id"]):
             project_id = self.get_project_id_by_name(
                 entry["project"]["client_name"]
                 + " / "

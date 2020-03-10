@@ -110,7 +110,10 @@ def dump_worklog_day(
     file: T.IO[str],
 ) -> None:
     print(file=file)
-    print(f"# {date} - total time: {total_time}", file=file)
+    print(
+        f"# {date} ({date.strftime('%a')}) - total time: {total_time}",
+        file=file,
+    )
 
     rows = rows[:]
     rows.insert(0, columns[:])
